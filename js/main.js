@@ -155,14 +155,33 @@ for (var i = 0; i < Zucchine.length; i++) {
     };
 
 };
-console.log(`questo è l'array delle zucchine grandi ${zucchineGrandi}`);
-console.log(`questo è l'array delle zucchine piccole ${zucchinePiccole}`);
+console.log(zucchineGrandi);
+console.log(zucchinePiccole);
 
 // Infine stampa separatamente quanto pesano i due gruppi di zucchine.
-// for (var i = 0; i < zucchineGrandi.length; i++) {
-//     var zucchina = zucchineGrandi[i];
-//
-// }
+var sommaZuccGrandi = 0;
+for (var i = 0; i < zucchineGrandi.length; i++) {
+    var zucchinaGrande = zucchineGrandi[i];
+    var zucchinaPeso = zucchina.peso;
+    sommaZuccGrandi += zucchinaPeso;
+}
+console.log('il peso totale è delle zucchine grandi sono: ' + sommaZuccGrandi + 'kg');
+
+
+var sommaZuccPiccole = 0;
+for (var i = 0; i < zucchinePiccole.length; i++) {
+    var zucchinaPiccola = zucchinePiccole[i];
+    var zucchinaPeso = zucchina.peso;
+    sommaZuccPiccole += zucchinaPeso;
+}
+console.log('il peso totale è delle zucchine piccole sono: ' + sommaZuccPiccole + 'kg');
+
+
+
+
+
+
+
 
 
 // Snack 3:
